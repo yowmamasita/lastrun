@@ -14,7 +14,7 @@ def when():
 
 
 def record():
-    with open('.lastrun', 'w') as f:
+    with open('.lastrun', 'wb') as f:
         now = datetime.datetime.now()
         pickle.dump(now, f)
         return now
